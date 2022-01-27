@@ -256,12 +256,13 @@ footer p {
  .row {
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content: space-around;
  }
  .row p {
   flex-wrap: wrap;
-  width: 500px;
+  width: 400px;
   height: 110px;
+  padding-left: 140px;
   font-size: x-small;
   display: flex;
   align-items: center;
@@ -281,6 +282,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   font-size: x-small;
+  width: 500px;
 }
 #host {
   padding-left: 20px;
