@@ -1,0 +1,296 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: lightgray;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+main img {
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+form select,
+form input {
+  margin-bottom: 0px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#about img{
+   padding-bottom: 20px;
+}
+/* -------  Media Query ------- */
+@media all and (min-width: 600px) {
+  /* section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  } */
+  header {
+    padding: 5px 50px 5px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: "Pangolin", cursive;
+  font-size: 50px;
+  color: #fff;
+  }
+  .singleLine {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+  #stay {
+    display: flex;
+    flex-direction: column;
+  }
+  #ideas {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+@media all and (min-width: 1000px) {
+  form {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  form > div {
+    margin: 2px 1px 2px 1px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #stay {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  input {
+    display: flex;
+    align-items: center;
+    margin: 0em;
+  }
+  form button {
+    background-color: #ff385c;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px;
+    width: 100%;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  .firstPics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .padding1 {
+    padding-right: 10px;
+  }
+  .padding2 {
+    padding-left: 10px;
+  }
+  #ideas img {
+    height: 300px;
+    flex: 1;
+  }
+  #ideas {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .secondPics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+ .resize {
+   height: 100px;
+   width: 200px;
+   display: flex;
+   flex-direction: row;
+ }
+ .resize img {
+   padding-right: 20px;
+   padding-bottom: 20px;
+   width: 230px;
+   height: 130px;
+ }
+ #about {
+   justify-content: center;
+   padding: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+   height: 200px;
+ }
+ .row {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+ .row p {
+  flex-wrap: wrap;
+  width: 500px;
+  height: 110px;
+  font-size: x-small;
+  display: flex;
+  align-items: center;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#host img {
+  width: 450px;
+  height: 300px;
+  margin: 20px;
+}
+.smallerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: x-small;
+}
+#host {
+  padding-left: 20px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+}
